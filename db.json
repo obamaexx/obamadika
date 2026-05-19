@@ -1,0 +1,204 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "genos",
+      "name_dad": "ganos",
+      "name_mom": "jena",
+      "jenis_kelamin": "laki-laki",
+      "Asal_Sekolah": "SD Rhista",
+      "alamat": "Jl. Genos No. 1",
+      "NIK": "8994373487472"
+    },
+    {
+      "id": 2,
+      "name": "rafli",
+      "name_dad": "rahmat",
+      "name_mom": "sinta",
+      "jenis_kelamin": "laki-laki",
+      "Asal_Sekolah": "SMP Harapan",
+      "alamat": "Jl. Mawar No. 7",
+      "NIK": "8273648273648"
+    },
+    {
+      "id": 3,
+      "name": "anisa",
+      "name_dad": "fahri",
+      "name_mom": "amelia",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "SMA Nusantara",
+      "alamat": "Jl. Melati No. 12",
+      "NIK": "9182736455463"
+    },
+    {
+      "id": 4,
+      "name": "dimas",
+      "name_dad": "surya",
+      "name_mom": "lina",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "SMK Teknologi",
+      "alamat": "Jl. Kenanga No. 4",
+      "NIK": "7263548273641"
+    },
+    {
+      "id": 5,
+      "name": "putri",
+      "name_dad": "agus",
+      "name_mom": "dewi",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "S1 Informatika",
+      "alamat": "Jl. Anggrek No. 9",
+      "NIK": "9182736451234"
+    },
+    {
+      "id": 6,
+      "name": "rizky",
+      "name_dad": "hamdan",
+      "name_mom": "wati",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "SMA Negeri 5",
+      "alamat": "Jl. Sakura No. 10",
+      "NIK": "8127364512345"
+    },
+    {
+      "id": 7,
+      "name": "salsa",
+      "name_dad": "budi",
+      "name_mom": "rina",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "D3 Akuntansi",
+      "alamat": "Jl. Dahlia No. 15",
+      "NIK": "7345628192736"
+    },
+    {
+      "id": 8,
+      "name": "farhan",
+      "name_dad": "tono",
+      "name_mom": "mia",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "SMP Merdeka",
+      "alamat": "Jl. Cemara No. 2",
+      "NIK": "8127364599991"
+    },
+    {
+      "id": 9,
+      "name": "nabila",
+      "name_dad": "ridwan",
+      "name_mom": "kartini",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "SMA Global",
+      "alamat": "Jl. Flamboyan No. 20",
+      "NIK": "9918273645512"
+    },
+    {
+      "id": 10,
+      "name": "arya",
+      "name_dad": "lukman",
+      "name_mom": "fitri",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "S1 Teknik Sipil",
+      "alamat": "Jl. Merpati No. 6",
+      "NIK": "7127364518234"
+    },
+    {
+      "id": 11,
+      "name": "keisha",
+      "name_dad": "dani",
+      "name_mom": "maya",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "SMK Multimedia",
+      "alamat": "Jl. Elang No. 18",
+      "NIK": "8891273645123"
+    },
+    {
+      "id": 12,
+      "name": "fikri",
+      "name_dad": "yusuf",
+      "name_mom": "sarah",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "SD Pelita",
+      "alamat": "Jl. Mangga No. 5",
+      "NIK": "9182736409876"
+    },
+    {
+      "id": 13,
+      "name": "tiara",
+      "name_dad": "fauzan",
+      "name_mom": "nia",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "S1 Hukum",
+      "alamat": "Jl. Apel No. 11",
+      "NIK": "7236451982736"
+    },
+    {
+      "id": 14,
+      "name": "bagas",
+      "name_dad": "ferdi",
+      "name_mom": "lilis",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "D3 Teknik Mesin",
+      "alamat": "Jl. Rambutan No. 3",
+      "NIK": "8127364500011"
+    },
+    {
+      "id": 15,
+      "name": "zahra",
+      "name_dad": "rahman",
+      "name_mom": "aisyah",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "SMA Islam",
+      "alamat": "Jl. Jeruk No. 14",
+      "NIK": "9991827364511"
+    },
+    {
+      "id": 16,
+      "name": "ilham",
+      "name_dad": "syahrul",
+      "name_mom": "mutia",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "SMK Otomotif",
+      "alamat": "Jl. Durian No. 8",
+      "NIK": "7345628199992"
+    },
+    {
+      "id": 17,
+      "name": "cindy",
+      "name_dad": "adit",
+      "name_mom": "bella",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "S1 Kedokteran",
+      "alamat": "Jl. Nangka No. 17",
+      "NIK": "9182000012345"
+    },
+    {
+      "id": 18,
+      "name": "galih",
+      "name_dad": "wawan",
+      "name_mom": "sri",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "SMP Nusantara",
+      "alamat": "Jl. Alpukat No. 13",
+      "NIK": "7236451827364"
+    },
+    {
+      "id": 19,
+      "name": "alya",
+      "name_dad": "haris",
+      "name_mom": "mega",
+      "jenis_kelamin": "perempuan",
+      "pendidikan_terakhir": "SMA Bintang",
+      "alamat": "Jl. Pepaya No. 19",
+      "NIK": "8127364591112"
+    },
+    {
+      "id": 20,
+      "name": "reno",
+      "name_dad": "indra",
+      "name_mom": "yuni",
+      "jenis_kelamin": "laki-laki",
+      "pendidikan_terakhir": "S1 Manajemen",
+      "alamat": "Jl. Kamboja No. 21",
+      "NIK": "9182736411111"
+    }
+  ]
+}
