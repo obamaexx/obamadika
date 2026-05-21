@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="relative z-10 px-6">
         <h1 className="text-5xl md:text-6xl font-bold">SELAMAT DATANG</h1>
         <h2 className="text-4xl md:text-5xl text-yellow-400 mt-2 font-semibold">
-          DI SMP AL-ARAF <span className="text-2xl text-amber-300">BONE</span>
+          DI SMP AL-ARAF <span className="text-5xl text-amber-300">BONE</span>
         </h2>
         <p className="mt-6 max-w-2xl mx-auto text-gray-200 leading-relaxed">
           Sekolah Islam adalah tempat lahirnya generasi beriman, berilmu, dan

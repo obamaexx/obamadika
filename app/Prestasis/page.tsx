@@ -6,7 +6,7 @@ import Image from "next/image";
 import Logo from "../Profil/Logo.png";
 import Header from "../Beranda/House.png";
 import Icon from "../Profil2/Icon.png";
-import Hafalan from "../Informasi/Hafalan.png"
+import Hafalan from "../Informasi/Hafalan.png";
 
 const prestasi = [
   {
@@ -27,16 +27,14 @@ export default function PrestasiPage() {
       if (profilRef.current && !profilRef.current.contains(e.target as Node)) {
         setOpenProfil(false);
       }
-
       if (infoRef.current && !infoRef.current.contains(e.target as Node)) {
         setOpenInfo(false);
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
   return (
     <div className="bg-gray-100 min-h-screen">
       <div className="relative h-[300px] md:h-[400px] overflow-hidden">
@@ -108,7 +106,7 @@ export default function PrestasiPage() {
               href="/Prestasis"
               className="hover:text-yellow-400 transition duration-300"
             >
-              Prestasis
+              Prestasi
             </Link>
             <div ref={infoRef} className="relative">
               <button
@@ -146,16 +144,293 @@ export default function PrestasiPage() {
           <p className="font-semibold text-green-900">Prestasi</p>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto mt-20 px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-green-900">
-            Prestasi SMP AL-ARAF
+      <style jsx>{`
+        @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@300;400;500;600&display=swap");
+
+        .prs-section {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 80px 28px 80px;
+        }
+
+        /* ── Section Header ── */
+        .prs-head {
+          text-align: center;
+          margin-bottom: 60px;
+          position: relative;
+        }
+
+        .prs-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-family: "Jost", sans-serif;
+          font-size: 0.68rem;
+          font-weight: 600;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: #b8860b;
+          margin-bottom: 14px;
+        }
+        .prs-eyebrow::before,
+        .prs-eyebrow::after {
+          content: "";
+          width: 36px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, #b8860b);
+          opacity: 0.6;
+        }
+        .prs-eyebrow::after {
+          background: linear-gradient(90deg, #b8860b, transparent);
+        }
+
+        .prs-title {
+          font-family: "Cormorant Garamond", serif;
+          font-size: clamp(2rem, 4vw, 3rem);
+          font-weight: 700;
+          color: #052e16;
+          line-height: 1.15;
+          letter-spacing: 0.01em;
+        }
+        .prs-title em {
+          font-style: italic;
+          color: #15803d;
+        }
+
+        .prs-sub {
+          font-family: "Jost", sans-serif;
+          font-size: 0.88rem;
+          color: #6b7280;
+          font-weight: 300;
+          margin-top: 10px;
+          letter-spacing: 0.04em;
+        }
+
+        .prs-ornament {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          margin-top: 16px;
+          color: #b8860b;
+          font-size: 0.7rem;
+          letter-spacing: 0.25em;
+          opacity: 0.65;
+        }
+
+        /* ── Grid ── */
+        .prs-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        @media (min-width: 640px) {
+          .prs-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (min-width: 1024px) {
+          .prs-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        /* ── Card ── */
+        .prs-card {
+          background: #fff;
+          border: 1px solid rgba(184, 134, 11, 0.15);
+          border-radius: 6px;
+          overflow: hidden;
+          position: relative;
+          transition:
+            transform 0.4s ease,
+            box-shadow 0.4s ease;
+          box-shadow: 0 4px 24px rgba(5, 46, 22, 0.07);
+        }
+
+        /* corner accent top-left */
+        .prs-card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          border-top: 2px solid #b8860b;
+          border-left: 2px solid #b8860b;
+          border-radius: 6px 0 0 0;
+          z-index: 2;
+          opacity: 0.5;
+          transition:
+            opacity 0.3s,
+            width 0.3s,
+            height 0.3s;
+        }
+        /* corner accent bottom-right */
+        .prs-card::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 40px;
+          height: 40px;
+          border-bottom: 2px solid #b8860b;
+          border-right: 2px solid #b8860b;
+          border-radius: 0 0 6px 0;
+          z-index: 2;
+          opacity: 0.5;
+          transition:
+            opacity 0.3s,
+            width 0.3s,
+            height 0.3s;
+        }
+
+        .prs-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 28px 72px rgba(5, 46, 22, 0.15);
+        }
+        .prs-card:hover::before,
+        .prs-card:hover::after {
+          opacity: 1;
+          width: 56px;
+          height: 56px;
+        }
+
+        /* ── Image ── */
+        .prs-img-wrap {
+          position: relative;
+          height: 248px;
+          overflow: hidden;
+        }
+        .prs-img-wrap img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover !important;
+          transition:
+            transform 0.6s ease,
+            filter 0.6s ease !important;
+          filter: saturate(88%);
+        }
+        .prs-card:hover .prs-img-wrap img {
+          transform: scale(1.07) !important;
+          filter: saturate(100%);
+        }
+
+        /* green-gold overlay on hover */
+        .prs-img-wrap::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to bottom,
+            transparent 40%,
+            rgba(5, 46, 22, 0.6) 100%
+          );
+          opacity: 0;
+          transition: opacity 0.4s;
+        }
+        .prs-card:hover .prs-img-wrap::after {
+          opacity: 1;
+        }
+
+        /* floating badge on image */
+        .prs-img-badge {
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          z-index: 3;
+          background: rgba(5, 46, 22, 0.82);
+          backdrop-filter: blur(6px);
+          border: 1px solid rgba(184, 134, 11, 0.45);
+          color: #d4a843;
+          font-family: "Jost", sans-serif;
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          padding: 5px 12px;
+          border-radius: 2px;
+        }
+
+        /* ── Card Body ── */
+        .prs-body {
+          padding: 22px 24px 26px;
+          background: #fff;
+          position: relative;
+        }
+
+        /* gold top accent line */
+        .prs-body::before {
+          content: "";
+          display: block;
+          width: 36px;
+          height: 2px;
+          background: linear-gradient(90deg, #b8860b, #d4a843, transparent);
+          border-radius: 2px;
+          margin-bottom: 14px;
+          transition: width 0.35s ease;
+        }
+        .prs-card:hover .prs-body::before {
+          width: 64px;
+        }
+
+        .prs-card-title {
+          font-family: "Cormorant Garamond", serif;
+          font-size: 1.08rem;
+          font-weight: 700;
+          color: #052e16;
+          line-height: 1.4;
+        }
+
+        .prs-card-desc {
+          font-family: "Jost", sans-serif;
+          font-size: 0.8rem;
+          color: #6b7280;
+          margin-top: 7px;
+          font-weight: 300;
+          line-height: 1.7;
+          letter-spacing: 0.02em;
+        }
+
+        /* read more row */
+        .prs-read-more {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 16px;
+          font-family: "Jost", sans-serif;
+          font-size: 0.72rem;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #b8860b;
+          opacity: 0;
+          transform: translateY(4px);
+          transition:
+            opacity 0.3s,
+            transform 0.3s;
+        }
+        .prs-read-more span {
+          display: inline-block;
+          transition: transform 0.2s;
+        }
+        .prs-card:hover .prs-read-more {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .prs-card:hover .prs-read-more span {
+          transform: translateX(4px);
+        }
+      `}</style>
+      <div className="prs-section">
+        <div className="prs-head">
+          <p className="prs-eyebrow">Kebanggaan Sekolah</p>
+          <h2 className="prs-title">
+            Prestasi <em>SMP AL-ARAF</em>
           </h2>
-          <p className="text-gray-600 mt-2">
-            Prestasi Siswa - Siswi SMP AL-ARAF Bone
-          </p>
+          <p className="prs-sub">Prestasi Siswa – Siswi SMP AL-ARAF Bone</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="prs-grid">
           {[
             ...prestasi,
             ...prestasi,
@@ -164,24 +439,22 @@ export default function PrestasiPage() {
             ...prestasi,
             ...prestasi,
           ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-2xl shadow-md hover:shadow-2xl overflow-hidden transition duration-500 hover:-translate-y-2 group"
-            >
-              <div className="overflow-hidden">
+            <div key={i} className="prs-card">
+              <div className="prs-img-wrap">
                 <Image
                   src={item.image}
                   alt={item.title}
                   width={500}
                   height={300}
-                  className="w-full h-[280px] object-cover group-hover:scale-110 transition duration-500"
                 />
+                <span className="prs-img-badge">✦ Prestasi</span>
               </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-lg text-green-900">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600 mt-2">{item.desc}</p>
+              <div className="prs-body">
+                <h3 className="prs-card-title">{item.title}</h3>
+                <p className="prs-card-desc">{item.desc}</p>
+                <div className="prs-read-more">
+                  Selengkapnya <span>→</span>
+                </div>
               </div>
             </div>
           ))}
